@@ -7,7 +7,7 @@ CamOpen - SJCam SJ4000Air Wifi
 ***SJ4000 Air 4k Wifi***
 
 
-## Um programa para conectar minha câmera de ação SJcam 4000Air e capturar feeds ao vivo
+## Um programa para conectar minha câmera de ação SJCAM 4000Air Wifi e capturar feeds ao vivo
 
 
 ### Informação
