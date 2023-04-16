@@ -1,10 +1,10 @@
 <h1 align="center"> 
 
-CamOpen - SJCam SJ4000Air
+CamOpen - SJCam SJ4000Air Wifi
 
 </h1>
 
-***SJ4000 Air 4k***
+***SJ4000 Air 4k Wifi***
 
 
 ## Um programa para conectar minha câmera de ação SJcam 4000Air e capturar feeds ao vivo
