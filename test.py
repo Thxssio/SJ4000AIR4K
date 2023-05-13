@@ -1,14 +1,8 @@
-import socket
-import ipaddress
+import socket 
 import sys
 import threading
 import time
-from io import BufferedReader, BufferedWriter
-from typing import List
-from socket import *
 from typing import List, Tuple, Union
-import tkinter as tk
-
 
 class PHeader:
     def __init__(self, magic: Tuple[int, int], length: Tuple[int, int], msg: Tuple[int, int], other: Union[None, List[int]] = None):
@@ -114,7 +108,6 @@ def keep_alive(stream: socket):
 
 def main():
     target = ("192.168.100.1", 6666)
-    login_payload = login_payload()
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as con:
         con.connect(target)
@@ -125,5 +118,6 @@ def main():
         t.join()
 
 if __name__ == "__main__":
+    login_payload = login_payload()
     main()
 
