@@ -1,2 +1,0 @@
-#!/bin/sh
-ffmpeg -i xcal.h264 -c:v libx264 -movflags +faststart abcd.mp4

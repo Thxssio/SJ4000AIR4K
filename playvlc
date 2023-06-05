@@ -1,2 +1,0 @@
-#!/bin/sh
-vlc xcal.h264 --demux h264
