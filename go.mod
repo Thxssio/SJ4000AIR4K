@@ -1,4 +1,4 @@
-module github.com/jonas-koeritz/actioncam
+module github.com/thxssio/CamOpen
 
 go 1.16
 
