@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/jonas-koeritz/actioncam/libipcamera"
+	"github.com/thxssio/CamOpen/libipcamera"
 )
 
 // Server implements the RTSP protocol to serve a H.264 stream
