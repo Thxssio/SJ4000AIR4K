@@ -16,8 +16,8 @@ import (
 	"runtime"
 	"runtime/pprof"
 
-	"github.com/Thxssio/CamOpen/libipcamera"
-	"github.com/Thxssio/CamOpen/rtsp"
+	"github.com/thxssio/CamOpen/libipcamera"
+	"github.com/thxssio/CamOpen/rtsp"
 	"github.com/spf13/cobra"
 )
 
