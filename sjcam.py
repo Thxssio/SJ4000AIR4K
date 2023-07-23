@@ -1,6 +1,5 @@
 import subprocess
 from tkinter import *
-from os import kill
 import wmi
 
 
