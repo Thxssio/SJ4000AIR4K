@@ -1,7 +1,7 @@
 import subprocess
 from tkinter import *
 from os import kill
-
+import wmi
 
 
 codloop = True
@@ -9,7 +9,10 @@ codloop = True
 
 def switch(sjcam):
     global processcam
-    args = "CamOpen.exe 192.168.100.1"
+    ti = 0
+    name = 'CamOpen.exe'
+    f = wmi.WMI()
+    args = 'CamOpen.exe rtsp 192.168.100.1'
 
     if sjcam == "Iniciar":
         cam = subprocess.Popen(args, shell=True)
@@ -17,8 +20,15 @@ def switch(sjcam):
         processcam = cam.pid
 
     if sjcam == "Parar":
-        print(processcam)
-        os._exit(1)
+        for process in f.win32_Process():
+            if process.name == name:
+                process.Terminate()
+                print("Processo encontrado!! Encerrando...")
+                ti +=1
+            print("Encerrado!")
+        if ti==0:
+            print("Processo não encontrado.")
+
 
      
 
@@ -51,7 +61,8 @@ if __name__ == '__main__':
     frame = Frame(window, width=40, height=40)
     frame.pack()
     frame.place(anchor='center', relx=0.5, rely=0.5)
-
+    text = Label(window, text="rtsp://127.0.0.1:8554", anchor='center')
+    text.place(x=80,y=110)
     text = Label(window, text="@thxssio | SoftwareEnginner", anchor='center')
     text.place(x=60,y=130)
    
