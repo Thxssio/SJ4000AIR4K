@@ -51,7 +51,7 @@ def parar_camera():
 
 if __name__ == '__main__':
     window = Tk()
-    p1 = PhotoImage(file= 'icon1.png')
+    p1 = PhotoImage(file= "./assets/icon1.png")
     window.iconphoto(False, p1)
     window.title("AD CANUDOS")
     window.config(padx=10, pady=50)
