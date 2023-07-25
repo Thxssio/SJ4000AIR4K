@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Icons">
+    <file>CAPTURAR.png</file>
+    <file>footer.png</file>
+    <file>Desenvolvedor.png</file>
+    <file>sjcam-app.png</file>
+    <file>icon1.png</file>
+  </qresource>
+</RCC>
